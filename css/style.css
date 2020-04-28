@@ -6,6 +6,28 @@ body {
     color: #303030;
 }
 /**/
+p {
+    font-weight: 100;
+    line-height: 3rem;
+    font-size: 1.2rem;
+}
+/**/
+.bg-primary {
+    background-color: #f46767!important;
+}
+.bg-secondary {
+    background-color: darkslategrey!important;
+}
+.nav a {
+    color: rgb(48, 75, 75)!important;
+}
+/*botones y su diseño y color*/
+.nav .nav-link:hover {
+    background-color: #f46767!important;
+    border-radius: 0.5rem;
+    color: white!important;
+}
+/**/
 .bg-vino {
     background-image: url(../img/principal1.jpg);
 }
@@ -18,17 +40,77 @@ body {
 }
 .imagen-superior > div,
 .imagen-inferior > div {
-    height: 30rem;
+    height: 40rem;
+}
+@media (min-width:768px) {
+    .imagen-superior > div,
+    .imagen-inferior > div {
+        height: 45rem;
+    }
 }
 .imagen-inferior .bg-comida {
     order: 1;
 }
 @media (min-width:768px) {
-    .imagen-superior > div,
-    .imagen-inferior > div {
-        height: 40rem;
-    }
     .imagen-inferior .bg-comida {
         order: unset;
     }
+}
+.imagen-superior .contenido {
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+}
+.imagen-inferior .contenido {
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+}
+.contenido p {
+    font-size: 1.2rem;
+    font-weight: 100;
+    line-height: 2rem;
+}
+/*Nosotros*/
+.separador::after {
+    content: '';
+    display: block;
+    width: 300px;
+    height: 50px;
+    background-image: url(../img/separador.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin: 20px auto 0 auto;
+}
+.nosotros .informacion h3 {
+    font-weight: 400;
+    font-size: 2rem;
+}
+/*Proximas Clases*/
+.clases {
+    background-color: rgba(210, 180, 140, 0.300);
+}
+.card {
+    margin-bottom: 2rem;
+}
+.img-thumbnail {
+    background-color:rgba(210, 180, 140, 0.400);
+}
+.card-meta span {
+    font-weight: 800;
+}
+.card-title {
+    font-size: 1.7rem;
+    text-transform: initial;
+}
+.card-subtitle {
+    color: #f46767;
+    font-weight: 600;
+    line-height: 1.5rem!important;
+}
+.card-body p {
+    line-height: 1.8rem;
+}
+.card-body > a {
+    color: #f46767;
+    text-transform: capitalize;
+    font-size: 1.3rem;
 }
