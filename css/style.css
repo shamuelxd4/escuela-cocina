@@ -1,9 +1,6 @@
-:root {
-    --primario:#f46669;
-}
 body {
     font-family: 'Roboto', sans-serif;
-    color: #303030;
+    color:#303030;
 }
 /**/
 p {
@@ -20,6 +17,7 @@ p {
 }
 .nav a {
     color: rgb(48, 75, 75)!important;
+    text-transform: uppercase;
 }
 /*botones y su diseño y color*/
 .nav .nav-link:hover {
@@ -78,7 +76,7 @@ p {
     background-image: url(../img/separador.png);
     background-repeat: no-repeat;
     background-position: center center;
-    margin: 20px auto 0 auto;
+    margin:0 auto;
 }
 .nosotros .informacion h3 {
     font-weight: 400;
@@ -113,4 +111,37 @@ p {
     color: #f46767;
     text-transform: capitalize;
     font-size: 1.3rem;
+}
+/*seccion de quieres ser chef*/
+/**/
+.licenciatura {
+    background-image: url(../img/chef_bg.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+.estudia-licenciatura {
+    height: 38rem;
+}
+.estudia-licenciatura .contenido h2 {
+    font-size: 2.4rem;
+    font-weight: 700;
+}
+.estudia-licenciatura .contenido p {
+    font-size: 1.8rem;
+    line-height: 3rem;
+}
+.btn-primary {
+    background-color: #f46767;
+    border-color: #f46767;
+}
+.btn-primary:hover {
+    background-color: #b93131;
+    border-color: #b93131;
+}
+/*footer de derechos reservados*/
+.footer {
+    border-bottom: 10px solid #f46767;
+}
+.copyright {
+    font-weight: 600;
 }
